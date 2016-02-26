@@ -37,40 +37,35 @@ table {
   margin: 20px 0;
 }
 
-/* line 35, ../sass/main_content.scss */
-.column {
-  float: left;
-  width: 30%;
-  padding: 15px;
+/*.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
 }
 
-/* line 41, ../sass/main_content.scss */
 .column img {
-  width: 70%;
-  max-width: 70%;
-  border-radius: 50%;
-  border: 5px solid #8a80c3;
-  margin-bottom: 20px;
+    width: 70%;
+    max-width:70%;
+    border-radius: 50%;
+    border: 5px solid #8a80c3;
+    margin-bottom: 20px;
 }
 
-/* line 49, ../sass/main_content.scss */
 .column h4 {
-  color: #8a80c3;
-  font-size: 150%;
-  margin-bottom: 15px;
+    color: #8a80c3;
+    font-size: 150%;
+    margin-bottom: 15px;
 }
 
-/* line 55, ../sass/main_content.scss */
 .column .btn {
-  border: 2px solid #8a80c3;
-  padding: 10px 20px;
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 150%;
-  text-decoration: none;
-  color: #8a80c3;
-}
-
+    border: 2px solid #8a80c3;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #8a80c3;
+}*/
 /* line 65, ../sass/main_content.scss */
 .container {
   width: 100%;
@@ -95,4 +90,9 @@ table, th, td {
   width: 60%;
   border: 3px solid #73AD21;
   padding: 10px;
+}
+
+/* line 86, ../sass/main_content.scss */
+.rounded {
+  border-radius: 40%;
 }

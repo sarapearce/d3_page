@@ -32,7 +32,7 @@ table {
     margin: 20px 0;
 }
 
-.column {
+/*.column {
     float: left;
     width: 30%;
     padding: 15px;
@@ -60,7 +60,7 @@ table {
     font-size: 150%;
     text-decoration: none;
     color: #8a80c3;
-}
+}*/
 
 .container {
     width: 100%; 
@@ -81,5 +81,9 @@ table, th, td {
     width: 60%;
     border: 3px solid #73AD21;
     padding: 10px;
+}
+
+.rounded {
+    border-radius: 40%;
 }
 
