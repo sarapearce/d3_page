@@ -1,7 +1,7 @@
 /*styles for footer*/
 /* line 3, ../sass/footer.scss */
 footer {
-  background: black;
+  background-color: white;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -57,17 +57,7 @@ footer table {
   height: 142px;
 }
 
-/* line 55, ../sass/footer.scss */
-.site_footer {
-  background: orange;
-}
-
-/* line 59, ../sass/footer.scss */
+/* line 56, ../sass/footer.scss */
 #footer_logo {
   width: 100px;
-}
-
-/* line 62, ../sass/footer.scss */
-footer {
-  background: white;
 }
