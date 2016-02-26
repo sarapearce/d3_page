@@ -1,0 +1,85 @@
+/*main body of html*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #333; 
+    font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+    padding-top: 66px;
+}
+
+table {
+    text-align: center;
+}
+
+#main-content{
+    text-align: center;	
+    /*offset from header and footer*/
+    margin: 100px 0px -142px 0px;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+#main-content:after {
+    /*content: ""; todo get rid of if it doesn't change anything'*/
+    display: block;
+}
+
+#main-content h3{
+    font-size: 250%;
+    margin: 20px 0;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.column img {
+    width: 70%;
+    max-width:70%;
+    border-radius: 50%;
+    border: 5px solid #8a80c3;
+    margin-bottom: 20px;
+}
+
+.column h4 {
+    color: #8a80c3;
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+
+.column .btn {
+    border: 2px solid #8a80c3;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #8a80c3;
+}
+
+.container {
+    width: 100%; 
+    margin: 0 auto;
+}
+#group_pics {
+    padding-top: 90px;
+}
+
+table, th, td {
+    margin: auto;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+

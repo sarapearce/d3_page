@@ -1,0 +1,423 @@
+/*Base file for import along with media queries*/
+/* line 1, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*commonly used classes and styles*/
+/* line 3, ../sass/common.scss */
+.hidden {
+  visibility: none;
+}
+
+/* line 7, ../sass/common.scss */
+#brand {
+  text-indent: -9000px;
+  background: url(../images/z.png) no-repeat top left;
+  background-size: 45px;
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin: 10px;
+}
+
+/* line 17, ../sass/common.scss */
+button {
+  color: blue;
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+/*styles for footer*/
+/* line 3, ../sass/footer.scss */
+footer {
+  background: black;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 10, ../sass/footer.scss */
+#social {
+  background: #8a80c3;
+  color: #fafafa;
+  padding: 25px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+/* line 21, ../sass/footer.scss */
+#social ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+/* line 32, ../sass/footer.scss */
+#social li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+/* line 42, ../sass/footer.scss */
+#social ul li img {
+  margin: 20px;
+}
+
+/* line 46, ../sass/footer.scss */
+footer table {
+  background: white;
+}
+
+/* line 51, ../sass/footer.scss */
+.site_footer, #main_content:after {
+  height: 142px;
+}
+
+/* line 55, ../sass/footer.scss */
+.site_footer {
+  background: orange;
+}
+
+/* line 59, ../sass/footer.scss */
+#footer_logo {
+  width: 100px;
+}
+
+/* line 62, ../sass/footer.scss */
+footer {
+  background: white;
+}
+
+/*header classes and styles*/
+/*header {
+    background: black; 
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}*/
+/* line 11, ../sass/header.scss */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  border-bottom: 2px solid #ccc;
+  height: 66px;
+  width: 100%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 22, ../sass/header.scss */
+nav ul {
+  float: right;
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+}
+
+/* line 27, ../sass/header.scss */
+nav a {
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  color: black;
+  text-decoration: none;
+}
+
+/* line 33, ../sass/header.scss */
+nav a:hover {
+  color: red;
+}
+
+/* line 37, ../sass/header.scss */
+nav button {
+  float: right;
+  display: inline;
+}
+
+/* line 42, ../sass/header.scss */
+nav td {
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 1, ../sass/hero.scss */
+#hero {
+  background-image: url(images/bg_img.png) no-repeat top left;
+  text-align: center;
+  color: #fafafa;
+  background-size: cover;
+  height: 350px;
+  padding: 25px 0;
+}
+
+/* line 10, ../sass/hero.scss */
+#hero img {
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+/* line 14, ../sass/hero.scss */
+#hero h2 {
+  font-size: 400%;
+  margin: 10px;
+}
+
+/* line 18, ../sass/hero.scss */
+#hero span {
+  border: 2px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 150%;
+}
+
+/*styles for images*/
+/* line 3, ../sass/images.scss */
+img {
+  vertical-align: text-top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 10, ../sass/images.scss */
+.logo {
+  width: 60px;
+}
+
+/* line 14, ../sass/images.scss */
+#band img {
+  width: 220px;
+}
+
+/*main body of html*/
+/* line 3, ../sass/main_content.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../sass/main_content.scss */
+body {
+  color: #333;
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  padding-top: 66px;
+}
+
+/* line 13, ../sass/main_content.scss */
+table {
+  text-align: center;
+}
+
+/* line 17, ../sass/main_content.scss */
+#main-content {
+  text-align: center;
+  /*offset from header and footer*/
+  margin: 100px 0px -142px 0px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+/* line 25, ../sass/main_content.scss */
+#main-content:after {
+  /*content: ""; todo get rid of if it doesn't change anything'*/
+  display: block;
+}
+
+/* line 30, ../sass/main_content.scss */
+#main-content h3 {
+  font-size: 250%;
+  margin: 20px 0;
+}
+
+/* line 35, ../sass/main_content.scss */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+
+/* line 41, ../sass/main_content.scss */
+.column img {
+  width: 70%;
+  max-width: 70%;
+  border-radius: 50%;
+  border: 5px solid #8a80c3;
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/main_content.scss */
+.column h4 {
+  color: #8a80c3;
+  font-size: 150%;
+  margin-bottom: 15px;
+}
+
+/* line 55, ../sass/main_content.scss */
+.column .btn {
+  border: 2px solid #8a80c3;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 150%;
+  text-decoration: none;
+  color: #8a80c3;
+}
+
+/* line 65, ../sass/main_content.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 69, ../sass/main_content.scss */
+#group_pics {
+  padding-top: 90px;
+}
+
+/* line 73, ../sass/main_content.scss */
+table, th, td {
+  margin: auto;
+  /*border: 3px solid #73AD21;*/
+  padding: 10px;
+}
+
+/* line 79, ../sass/main_content.scss */
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+/* line 1, ../sass/texts.scss */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  text-align: center;
+}
+
+/* line 6, ../sass/texts.scss */
+p {
+  word-wrap: break-word;
+  font-weight: 400;
+  color: #453b3a;
+  font-size: 16.68pt;
+  width: 600px;
+  line-height: 20px;
+}
+
+/* line 16, ../sass/texts.scss */
+h1 {
+  font-weight: 200;
+  font-size: 56.6px;
+  text-shadow: 0.5px 0.5px #000000;
+  color: #453b3a;
+}
+
+/* line 24, ../sass/texts.scss */
+h2 {
+  font-weight: 200;
+  color: #453b3a;
+  font-size: 38.26pt;
+  text-shadow: 0.5px 0.5px #000000;
+  text-align: center;
+}
+
+/* line 32, ../sass/texts.scss */
+h4 {
+  text-align: center;
+  word-wrap: normal;
+  font-weight: 200;
+  color: #453b3a;
+  font-size: 14pt;
+}
+
+/*media queries*/
+@media only screen and (max-width: 901px) {
+  /* line 15, ../sass/screen.scss */
+  .column {
+    padding: 10px;
+  }
+
+  /* line 18, ../sass/screen.scss */
+  #hero h2 {
+    font-size: 200%;
+  }
+
+  /* line 21, ../sass/screen.scss */
+  #main-content h3 {
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 27, ../sass/screen.scss */
+  .column {
+    float: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 40px 0;
+  }
+}

@@ -1,0 +1,18 @@
+/*styles for images*/
+/* line 3, ../sass/images.scss */
+img {
+  vertical-align: text-top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 10, ../sass/images.scss */
+.logo {
+  width: 60px;
+}
+
+/* line 14, ../sass/images.scss */
+#band img {
+  width: 220px;
+}

@@ -1,0 +1,23 @@
+/*commonly used classes and styles*/
+/* line 3, ../sass/common.scss */
+.hidden {
+  visibility: none;
+}
+
+/* line 7, ../sass/common.scss */
+#brand {
+  text-indent: -9000px;
+  background: url(../images/z.png) no-repeat top left;
+  background-size: 45px;
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin: 10px;
+}
+
+/* line 17, ../sass/common.scss */
+button {
+  color: blue;
+  border: 2px solid;
+  border-radius: 25px;
+}

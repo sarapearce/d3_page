@@ -1,0 +1,45 @@
+/*header classes and styles*/
+
+/*header {
+    background: black; 
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}*/
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-bottom: 2px solid #ccc;
+    height: 66px;
+    width: 100%;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    float: right;
+    font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+}
+
+nav a {
+    font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav button {
+    float: right;
+    display: inline;
+}
+
+nav td {
+    padding: 0px 10px 0px 10px;
+}
+

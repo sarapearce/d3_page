@@ -1,0 +1,49 @@
+/*header classes and styles*/
+/*header {
+    background: black; 
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}*/
+/* line 11, ../sass/header.scss */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  border-bottom: 2px solid #ccc;
+  height: 66px;
+  width: 100%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 22, ../sass/header.scss */
+nav ul {
+  float: right;
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+}
+
+/* line 27, ../sass/header.scss */
+nav a {
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  color: black;
+  text-decoration: none;
+}
+
+/* line 33, ../sass/header.scss */
+nav a:hover {
+  color: red;
+}
+
+/* line 37, ../sass/header.scss */
+nav button {
+  float: right;
+  display: inline;
+}
+
+/* line 42, ../sass/header.scss */
+nav td {
+  padding: 0px 10px 0px 10px;
+}

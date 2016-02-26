@@ -1,0 +1,24 @@
+#hero {
+    background-image: url(images/bg_img.png) no-repeat top left;
+    text-align: center;
+    color: #fafafa;
+    background-size: cover;
+    height: 350px;
+    padding: 25px 0;
+}
+
+#hero img {
+    border-radius: 50%;
+    margin-top: 30px;
+}
+#hero h2 {
+    font-size: 400%;
+    margin: 10px;
+}
+#hero span {
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+}

@@ -1,0 +1,73 @@
+/*styles for footer*/
+/* line 3, ../sass/footer.scss */
+footer {
+  background: black;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 10, ../sass/footer.scss */
+#social {
+  background: #8a80c3;
+  color: #fafafa;
+  padding: 25px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+/* line 21, ../sass/footer.scss */
+#social ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+/* line 32, ../sass/footer.scss */
+#social li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+/* line 42, ../sass/footer.scss */
+#social ul li img {
+  margin: 20px;
+}
+
+/* line 46, ../sass/footer.scss */
+footer table {
+  background: white;
+}
+
+/* line 51, ../sass/footer.scss */
+.site_footer, #main_content:after {
+  height: 142px;
+}
+
+/* line 55, ../sass/footer.scss */
+.site_footer {
+  background: orange;
+}
+
+/* line 59, ../sass/footer.scss */
+#footer_logo {
+  width: 100px;
+}
+
+/* line 62, ../sass/footer.scss */
+footer {
+  background: white;
+}
