@@ -5,13 +5,14 @@
 	<title>Super Hero Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--<script type="text/javascript" src="js/libs/jquery.min.js"></script>-->
-	<!--<script type="text/javascript" src="js/dynamic.js"></script>-->
+	<script type="text/javascript" src="js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="js/libs/d3.v3.js"></script>
+	<script type="text/javascript" src="js/dynamic.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css"></link>
     </head>
     <body>
 	<!--top navigation header-->
-	<nav>
+	<nav id="header_wrapper">
 	    <table>
 		<tr>
 		    <td>
@@ -68,9 +69,7 @@
 		<h1>What can the Justice League do for you?</h1>
 		<table align="center">
 		    <tr>
-			<td id="corruption">
-			    <img id="corruption_img" class="rounded" alt="justice league" src="images/jleague_flying.jpg"/>
-			</td>
+			<td id="corruption"></td>
 			<td id="aliens">
 			    <img id="aliens_img" class="rounded" alt="aliens" src="images/JL_aliens.jpeg" />
 			</td>
