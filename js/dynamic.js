@@ -15,6 +15,15 @@ function contactMe() {
     }
 }
 
+function rangePoints() {
+    myScale = d3.scale.ordinal()
+	    .domain(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+			, "Saturday", "Sunday"])
+	    .rangePoints([0, 100]);
+   return myScale("Tuesday");
+}
+
+
 function loadSvgs() {
     //this needs massive abstraction
 
@@ -30,8 +39,8 @@ function loadSvgs() {
     var width = 960 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var barWidth = Math.floor(width / 19) - 1;
-    
-    
+
+
 
     var x = d3.scale.linear()
 	    .range([barWidth / 2, width - barWidth / 2]);
@@ -45,7 +54,7 @@ function loadSvgs() {
 		return Math.round(d / 1e6) + "M";
 	    });
 // An SVG element with a bottom-right origin.
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("corruption").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 
@@ -62,7 +71,7 @@ function loadSvgs() {
 	    .text(2000);
 
     //load data
-    d3.csv("../data/population.csv", function (error, data) {
+    d3.csv("data/population.csv", function (error, data) {
 
 	// Convert strings to numbers.
 	data.forEach(function (d) {
@@ -127,7 +136,7 @@ function loadSvgs() {
 		.attr("width", barWidth)
 		.attr("y", y)
 		//**good example of callback using dynamic values**
-		.attr("height", function (value) { 
+		.attr("height", function (value) {
 		    return height - y(value);
 		});
 	// Add labels to show birthyear.
