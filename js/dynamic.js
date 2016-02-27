@@ -16,6 +16,7 @@ function contactMe() {
 }
 
 function loadSvgs() {
+    //this needs massive abstraction
 
     var w = 960, h = 500;
     var svg = d3.select("#corruption")
@@ -24,11 +25,13 @@ function loadSvgs() {
     svg.append("text")
 	    .text("hello world").attr("x", 100).attr("y", 100);
 
-    //keep this for handling page sizing
+    //keep this for handling page sizing and references to page size
     var margin = {top: 20, right: 40, bottom: 30, left: 20};
     var width = 960 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var barWidth = Math.floor(width / 19) - 1;
+    
+    
 
     var x = d3.scale.linear()
 	    .range([barWidth / 2, width - barWidth / 2]);
@@ -57,7 +60,9 @@ function loadSvgs() {
 	    .attr("class", "title")
 	    .attr("dy", ".71em")
 	    .text(2000);
-    d3.csv("population.csv", function (error, data) {
+
+    //load data
+    d3.csv("../data/population.csv", function (error, data) {
 
 	// Convert strings to numbers.
 	data.forEach(function (d) {
@@ -121,7 +126,8 @@ function loadSvgs() {
 		.attr("x", -barWidth / 2)
 		.attr("width", barWidth)
 		.attr("y", y)
-		.attr("height", function (value) {
+		//**good example of callback using dynamic values**
+		.attr("height", function (value) { 
 		    return height - y(value);
 		});
 	// Add labels to show birthyear.
@@ -177,10 +183,3 @@ function loadSvgs() {
     });
 }
 
-
-//function loadData() {
-//d3.select("body").selectAll("p").data(data).enter()
-//	}
-
-
-    
