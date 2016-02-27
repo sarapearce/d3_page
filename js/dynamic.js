@@ -20,11 +20,24 @@ function rangePoints() {
 	    .domain(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 			, "Saturday", "Sunday"])
 	    .rangePoints([0, 100]);
-   return myScale("Tuesday");
+    return myScale("Tuesday");
 }
 
 
 function loadSvgs() {
+    
+
+
+
+
+
+
+
+
+
+
+//    
+//    
     //this needs massive abstraction
 
     var w = 960, h = 500;
@@ -54,7 +67,7 @@ function loadSvgs() {
 		return Math.round(d / 1e6) + "M";
 	    });
 // An SVG element with a bottom-right origin.
-    var svg = d3.select("corruption").append("svg")
+    var svg = d3.select("body").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 
