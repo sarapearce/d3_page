@@ -441,25 +441,35 @@ rect:first-child {
   fill: #1f77b4;
 }
 
+/* line 1, ../sass/charts.scss */
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
 /*media queries*/
 @media only screen and (max-width: 901px) {
-  /* line 16, ../sass/screen.scss */
+  /* line 17, ../sass/screen.scss */
   .column {
     padding: 10px;
   }
 
-  /* line 19, ../sass/screen.scss */
+  /* line 20, ../sass/screen.scss */
   #hero h2 {
     font-size: 200%;
   }
 
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   #main-content h3 {
     font-size: 150%;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 28, ../sass/screen.scss */
+  /* line 29, ../sass/screen.scss */
   .column {
     float: none;
     width: 100%;
