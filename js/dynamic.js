@@ -31,9 +31,9 @@ function barGraph() {
 
 function popGraph() {
     var margin = {top: 20, right: 40, bottom: 30, left: 20},
-    width = 150 - margin.left - margin.right,
-	    height = 100 - margin.top - margin.bottom,
-	    barWidth = Math.floor(width / 19) - 1;
+    width = 600 - margin.left - margin.right,
+    height = 323 - margin.top - margin.bottom,
+    barWidth = Math.floor(width / 19) - 1;
 
     var x = d3.scale.linear()
 	    .range([barWidth / 2, width - barWidth / 2]);
