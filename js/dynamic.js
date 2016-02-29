@@ -1,7 +1,8 @@
 $(document).ready(function () {
 //    addEvents();
-    popGraph();
+//    popGraph();
 //    barGraph();
+      rects();
 });
 
 function addEvents() {
@@ -32,8 +33,8 @@ function barGraph() {
 function popGraph() {
     var margin = {top: 20, right: 40, bottom: 30, left: 20},
     width = 600 - margin.left - margin.right,
-    height = 323 - margin.top - margin.bottom,
-    barWidth = Math.floor(width / 19) - 1;
+	    height = 323 - margin.top - margin.bottom,
+	    barWidth = Math.floor(width / 19) - 1;
 
     var x = d3.scale.linear()
 	    .range([barWidth / 2, width - barWidth / 2]);
@@ -196,4 +197,49 @@ function popGraph() {
 		    });
 	}
     });
+}
+
+function rects() {
+    var mouse = [480, 250],
+	    count = 0;
+
+    var svg = d3.select("body").append("svg")
+	    .attr("width", 960)
+	    .attr("height", 500);
+
+    var g = svg.selectAll("g")
+	    .data(d3.range(25))
+	    .enter().append("g")
+	    .attr("transform", "translate(" + mouse + ")");
+
+    g.append("rect")
+	    .attr("rx", 6)
+	    .attr("ry", 6)
+	    .attr("x", -12.5)
+	    .attr("y", -12.5)
+	    .attr("width", 25)
+	    .attr("height", 25)
+	    .attr("transform", function (d, i) {
+		return "scale(" + (1 - d / 25) * 20 + ")";
+	    })
+	    .style("fill", d3.scale.category20c());
+
+    g.datum(function (d) {
+	return {center: mouse.slice(), angle: 0};
+    });
+
+    svg.on("mousemove", function () {
+	mouse = d3.mouse(this);
+    });
+
+    d3.timer(function () {
+	count++;
+	g.attr("transform", function (d, i) {
+	    d.center[0] += (mouse[0] - d.center[0]) / (i + 5);
+	    d.center[1] += (mouse[1] - d.center[1]) / (i + 5);
+	    d.angle += Math.sin((count + i) / 10) * 7;
+	    return "translate(" + d.center + ")rotate(" + d.angle + ")";
+	});
+    });
+
 }
