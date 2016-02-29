@@ -441,14 +441,15 @@ rect:first-child {
   fill: #1f77b4;
 }
 
-/* line 1, ../sass/charts.scss */
-.chart div {
+/*.chart div*/
+/* line 3, ../sass/charts.scss */
+.bar {
   font: 10px sans-serif;
-  background-color: steelblue;
+  background: steelblue;
   text-align: right;
   padding: 3px;
   margin: 1px;
-  color: white;
+  color: black;
 }
 
 /*media queries*/

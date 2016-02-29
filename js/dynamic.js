@@ -20,8 +20,9 @@ function barGraph() {
 	    .selectAll("div")
 	    .data(data)
 	    .enter().append("div")
+	    .attr("class", "bar")
 	    .style("width", function (d) {  
-		return x(d) + "px";
+		return d + "px"; //rewrite later to passing through scale to find width
 	    })
 	    .text(function (d) {
 		return d;
