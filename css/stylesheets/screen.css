@@ -441,9 +441,9 @@ rect:first-child {
   fill: #1f77b4;
 }
 
-/*.chart div*/
+/**/
 /* line 3, ../sass/charts.scss */
-.bar {
+.chart div {
   font: 10px sans-serif;
   background: steelblue;
   text-align: right;

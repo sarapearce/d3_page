@@ -1,8 +1,8 @@
 $(document).ready(function () {
 //    addEvents();
 //    popGraph();
-//    barGraph();
-      rects();
+    barGraph();
+//      rects();
 });
 
 function addEvents() {
