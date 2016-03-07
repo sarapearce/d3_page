@@ -1,0 +1,9 @@
+/* line 1, ../sass/charts.scss */
+.chart div {
+  font: 10px sans-serif;
+  background: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
